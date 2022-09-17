@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Assignment portal Straton Facer in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <title>Straton Facer's Assignment Portal Page</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div id="content">
+      <header>
+        <img class="logo" src="images/me.png" alt="picture of me" />
+        <h1 class="home-title">Straton Facer</h1>
+      </header>
+      <main class="home-grid">
+        <h2>WDD 230: Assignment Portal</h2>
+        <hr />
+        <ul>
+          <li>Lesson 02: <a href=""> Title</a></li>
+          <li>Lesson 03: <a href="">Title</a></li>
+          <li>Lesson 04: <a href="">Title</a></li>
+          <li>Lesson 05: <a href=""> Title</a></li>
+          <li>Lesson 06: <a href=""> Title</a></li>
+          <li>Lesson 07: <a href=""> Title</a></li>
+          <li>Lesson 08: <a href=""> Title</a></li>
+          <li>Lesson 09: <a href=""> Title </a></li>
+          <li>Lesson 10: <a href="">Title</a></li>
+          <li>Lesson 11: <a href="">Title</a></li>
+        </ul>
+        <hr />
+        <p><i> Some lessons may need more than one activity/assignment link.</i></p>
+      </main>
+      <footer>
+        <h3>&copy 2022 | Straton Facer | Idaho Falls, ID</h3>
+        <p>Last Updated:</p>
+        <p id="demo"></p>
+        <script>
+            
+          let text = document.lastModified;
+          document.getElementById("demo").innerHTML = text;
+        </script>
+      </footer>
+    </div>
+  </body>
+</html>
