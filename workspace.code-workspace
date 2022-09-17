@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "../../Desktop/CSE110"
+		},
+		{
+			"path": "../../Desktop/CSE111"
+		},
+		{
+			"path": "../../Desktop/wdd130"
+		},
+		{
+			"name": "WDD230-1",
+			"path": "../WDD230-1"
+		},
+		{
+			"name": "wdd230-4",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "WDD230-1"
+	}
+}
