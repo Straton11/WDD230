@@ -1,6 +1,6 @@
 @import url(http://www.cssfontstack.com/);
 #content {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
   }
 main section{
@@ -46,7 +46,7 @@ footer{
     text-align: center;
     color: #266b32;
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
-    font-size: 2.5em;
+    font-size: 3em;
 }
 h4{
     color: #000000;
@@ -58,13 +58,8 @@ footer a{
     color: #000000;
     text-decoration: none;
 }
-#logo_link{
-    padding-top: 5px;
-    justify-self: center;
-    align-self: center;
-}
-.logo{
-    width: 100px; 
+img {
+    max-width: 140px;
 }
 @media screen and (max-width: 900px) {
     .home-grid {
