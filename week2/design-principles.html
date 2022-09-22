@@ -61,14 +61,13 @@
             </section>
         </main>
         <footer>
-            <h3>&copy 2022 | Straton Facer | Last Updated: </h3>
-            <p id="demo"></p>
-            <script>
-                
-              let text = document.lastModified;
-              document.getElementById("demo").innerHTML = text;
-            </script>
+            <h3>&copy 2022 | Straton Facer | Last Updated:<span id="date"></span> </h3>
+
         </footer>
-        <script src="scripts/dates.js"></script>
+        <script>
+            
+            let text = document.lastModified;
+            document.getElementById("date").innerHTML = text;
+          </script>
     </body>
 </html>
