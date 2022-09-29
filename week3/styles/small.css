@@ -1,0 +1,111 @@
+@import url(http://www.cssfontstack.com/);
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  nav a{
+    text-align: center;
+    color: #a9aca9;
+    text-decoration: none;
+    padding: 100px;
+  }
+#hero-msg h1{
+    text-align: center;
+  }
+ #hero-msg h4{
+    text-align: center;
+  }
+main section{
+    text-align: center;
+  }
+body {
+    background-color: #fcfbfb; 
+    --paragraph-font: Roboto, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color:#2f2235;
+    grid-template-columns: 150px auto;
+}
+nav a:hover {
+    background-color: #60495a;
+    color: #a9aca9;
+}
+footer{
+    background-color: #efc259; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: center;
+    margin-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0px 0px 25px 25px; 
+}
+footer h3{
+    color: #000000;
+}
+footer a{
+    color: #000000;
+    text-decoration: none;
+}
+.home-title{
+    color: #3f3244;
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 4em;
+    margin-top: 10px;
+}
+h4{
+    color: #000000;
+}
+.msg h2{
+    color: #000000;
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+}
+.msg p{
+    color: #000000;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+h2{
+    margin: 0;
+}
+#logo_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.logo{
+    width: 150px;
+    padding: 25px; 
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px; 
+}
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#hero-msg h4 {
+    color: #a9aca9;
+    font-size: 2em;
+    margin-top: 550px;
+}
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
