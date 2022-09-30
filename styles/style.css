@@ -34,13 +34,14 @@ p {
 }
 footer{
     background-color: #efc259; 
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: center;
     margin-top: 50px;
     justify-content: space-around;
     align-items: center;
     border-radius: 25px 25px 25px 25px; 
+    text-align: center;
 }
 .home-title{
     text-align: center;
