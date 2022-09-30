@@ -1,5 +1,7 @@
-@media only screen and (min-width: 60em){
-    h1{
-        font-size: 2rem;
-    }
+@media only screen and (min-width: 60em) {
+    nav a { display: flex; }
+    nav a { flex: 1 1 100%;}
+    header{display: flex;}
+    h1{ margin-top: 55px;}
+
 }
