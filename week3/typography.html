@@ -13,37 +13,45 @@
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/medium.css" />
     <link rel="stylesheet" href="styles/large.css" />
-    <script defer src="scripts/lastmodif.js"></script>
+    <script defer src="scripts/lastUpdated.js"></script>
   </head>
   <body>
-    <header>
-      <img class="logo" src="images/sports-logo.png" alt="208 Sports logo" />
-      <h1>208 Sports</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="target-audience.html">Target Audience</a></li>
-          <li><a href="color-scheme.html">Color Scheme</a></li>
-          <li><a href="typography.html">Typography</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h2>Typography</h2>
-      <h3>Headings: Merriweather</h3>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/sports-logo.png" alt="208 SportsLogo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="target-audience.html">Target Audience</a>
+                <a href="color-scheme.html">Color Scheme</a>
+                <a href="typography.html">Typography</a>
+            </nav>
+        </header> 
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/sports-background.jpeg" width="100%" alt="All sports">
+            </div>
+            <section id="hero-msg">
+                <h1 class="home-title">208 Sports</h1>
+                <h4>All Things Fitness</h4>
+            </section>
+        </div>  
+    <main class="center">
+      <h3>Typography</h3>
+      <h3>Headings = Rock Salt</h3>
       <p>
-        I chose this font because it is simple and classy. It is perfect for my
-        Weather Site.
+        I picked this one because it is fun and draws your attention. 
       </p>
-      <h3>Paragraph and Navigation Bar: Montserrat</h3>
+      <h3>Paragraph = Roboto</h3>
       <p>
-        I love the simplicity and readibilty of Montserrat. It fits my site.
+        I picked this one because it was professional looking. 
       </p>
     </main>
     <footer>
-      &copy; <span id="year"></span>| Straton Facer | Idaho Falls |
-      <a href="stratonfacer1@gmail.com"></a><br />
-      <span id="lastModif"></span>
-    </footer>
+        &copy; <span id="year"></span> | Straton Facer | Idaho Falls |
+        <a href="stratonfacer1@gmail.com"></a>
+        <span id="lastUpdated"></span>
+      </footer>
   </body>
 </html>

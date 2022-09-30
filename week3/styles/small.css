@@ -8,6 +8,7 @@
     color: #a9aca9;
     text-decoration: none;
     padding: 100px;
+    border-radius: 25px 25px 25px 25px; 
   }
 #hero-msg h1{
     text-align: center;
@@ -26,32 +27,35 @@ body {
     padding: 0;
 }
 header {
-    background-color:#2f2235;
+    background-color:#466D72;
     grid-template-columns: 150px auto;
+    border-radius: 25px 25px 0px 0px; 
 }
 nav a:hover {
-    background-color: #60495a;
-    color: #a9aca9;
+    background-color: #DEA402;
+    color: #041E25;
 }
 footer{
-    background-color: #efc259; 
+    background-color: #DEA402; 
     padding-top: 50px;
     padding-bottom: 50px;
     display: center;
     margin-top: 50px;
-    justify-content: space-around;
-    align-items: center;
+    text-align: center;
     border-radius: 0px 0px 25px 25px; 
+    color: #041E25;
 }
 footer h3{
-    color: #000000;
+    color: #808980;
+    align-items: center;
 }
 footer a{
-    color: #000000;
+    color: #808980;
     text-decoration: none;
+    align-items: center;
 }
 .home-title{
-    color: #3f3244;
+    color: #DEA402;
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
     font-size: 4em;
     margin-top: 10px;
@@ -99,7 +103,7 @@ nav {
     z-index: -1;
 }
 #hero-msg h4 {
-    color: #a9aca9;
+    color: #466D72;
     font-size: 2em;
     margin-top: 550px;
 }
@@ -107,5 +111,33 @@ nav {
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
+}
+h3 {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+.primary{
+    background-color: #466D72;
+    color: white;
+    padding: 15px;
+}
+.secondary{
+    background-color: #041E25;
+    color: white;
+    padding: 15px;
+}
+.accent1{
+    background-color: #DEA402;
+    color: white;
+    padding: 15px;
+}
+.accent2{
+    background-color: #808980;
+    color: white;
+    padding: 15px;
+}
+.person {
+    max-width: 500px;
 }
 
