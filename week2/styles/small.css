@@ -16,8 +16,7 @@ main section {
 	background-color: #eee;
 }
 
-main section:nth-child(2) {
-	display: none;
+.espn {
 	margin: 0.5rem;
 }
 
@@ -56,13 +55,14 @@ section {
 section * {
     font-family: 'roboto', sans-serif;
 }
-h3 {
+h2 {
     margin: 0;
     font-family: 'roboto', sans-serif;
     padding: 10px;
     text-align: center;
     background: #efc259;
     color: black;
+    height: 40px;
 }
 section > div {
     padding: 0 10px;
