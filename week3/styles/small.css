@@ -25,6 +25,7 @@ body {
     font-size: 22px;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 header {
     background-color:#466D72;
@@ -59,9 +60,6 @@ footer a{
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
     font-size: 4em;
     margin-top: 10px;
-}
-h4{
-    color: #000000;
 }
 .msg h2{
     color: #000000;
@@ -102,10 +100,10 @@ nav {
     grid-row: 1/3;
     z-index: -1;
 }
-#hero-msg h4 {
-    color: #466D72;
+#hero-msg h2 {
+    color: #041E25;
     font-size: 2em;
-    margin-top: 550px;
+    margin-top: 475px;
 }
 #hero-msg {
     grid-column: 2/3;
@@ -140,4 +138,6 @@ h3 {
 .person {
     max-width: 500px;
 }
-
+.domain {
+    text-align: center;
+}
