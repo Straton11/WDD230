@@ -1,0 +1,32 @@
+@media(min-width: 35rem){
+    main{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+        gap: 1rem; 
+        grid-template-areas: 
+          "hero hero hero"
+          "newReleaseContainer newReleaseContainer newReleaseContainer"
+          "spotlightsHolder spotlightsHolder spotlightsHolder"
+          "joinContainer joinContainer joinContainer"
+          "eventContainer eventContainer weatherContainer"; 
+    }
+    .hero{
+        grid-area: hero;
+    }
+    .new{
+        grid-area: newReleaseContainer;
+    }
+    .spotlight{
+        grid-area: spotlightsHolder;
+    }
+    .joinContainer{
+        grid-area: joinContainer;
+    }
+    .event{
+        grid-area: eventContainer;
+    }
+    .weather{
+        grid-area: weatherContainer;
+    }
+}
