@@ -1,5 +1,7 @@
 @media only screen and (min-width: 37.5em){
-    
+    main section {
+        margin: 0.5rem;
+    }
     nav a { display: flex; }
     nav a { flex: 1 1 100%;}
     header{display: flex;}
