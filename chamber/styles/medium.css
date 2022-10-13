@@ -6,27 +6,27 @@
         gap: 1rem; 
         grid-template-areas: 
           "hero hero hero"
-          "newReleaseContainer newReleaseContainer newReleaseContainer"
-          "spotlightsHolder spotlightsHolder spotlightsHolder"
-          "joinContainer joinContainer joinContainer"
-          "eventContainer eventContainer weatherContainer"; 
+          "new new new"
+          "spotlight spotlight spotlight"
+          "join join join"
+          "event event weather"; 
     }
     .hero{
         grid-area: hero;
     }
     .new{
-        grid-area: newReleaseContainer;
+        grid-area: new;
     }
     .spotlight{
-        grid-area: spotlightsHolder;
+        grid-area: spotlight;
     }
     .joinContainer{
-        grid-area: joinContainer;
+        grid-area: join;
     }
     .event{
-        grid-area: eventContainer;
+        grid-area: event;
     }
     .weather{
-        grid-area: weatherContainer;
+        grid-area: weather;
     }
 }
