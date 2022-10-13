@@ -1,0 +1,32 @@
+@media(min-width: 35rem){
+    main{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+        gap: 1rem; 
+        grid-template-areas: 
+          "hero hero hero"
+          "new new new"
+          "spotlight spotlight spotlight"
+          "join join join"
+          "event event weather"; 
+    }
+    .hero{
+        grid-area: hero;
+    }
+    .new{
+        grid-area: new;
+    }
+    .spotlight{
+        grid-area: spotlight;
+    }
+    .joinContainer{
+        grid-area: join;
+    }
+    .event{
+        grid-area: event;
+    }
+    .weather{
+        grid-area: weather;
+    }
+}

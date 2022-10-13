@@ -1,0 +1,119 @@
+.grid-container {
+  display: grid;
+  column-gap: 0px;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.date {
+  margin: 0.5rem;
+  border: 1px solid #bbb;
+  padding: 0.75rem;
+  background-color: #eee;
+  text-size-adjust: 50px;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  text-align: center;
+}
+header {
+  background-color: #466d72;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 50px;
+}
+footer {
+  background-color: #466d72;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+hr {
+  margin: 25px;
+}
+.social {
+  max-width: 50px;
+}
+.logo {
+  max-width: 150px;
+}
+
+/* Here is stuff for the nav */
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #466d72;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+main {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 0.8rem;
+}
+
+main section h2 {
+  color: #536878;
+}
+
+main section {
+  margin: 0.5rem;
+  border: 1px solid #bbb;
+  background-color: #eee;
+}
+.spot {
+  border: 1px solid #bbb;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  margin: 0.5rem;
+}
+.topfooter {
+  display: grid;
+  grid-template-columns: auto;
+}
+.pin {
+  max-width: 15px;
+}

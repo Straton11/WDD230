@@ -1,49 +1,65 @@
-@media (min-width: 60rem){
-    nav{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+@media only screen and (min-width: 64rem) {
+    h2{
+        font-size: 1.2rem;
     }
-    nav ul{
-        display: inline;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        padding: 0;
-        margin: 1rem;
-    }
-    .icon{
+    button {
         display: none;
     }
+    header{
+        grid-template-rows: 2;
+    }
+    nav{
+        grid-column: 3;
+        grid-row: 1;
+        width: auto;
+        border: none;
+    }
+    nav ul {
+        display: flex;
+        justify-content:center;
+        
+    }
+    nav ul li a {
+        padding: .5rem 1rem;
+        border: none;
+    }
+    nav ul li a:hover {
+        background-color: #DEA402;
+    }
     main{
-        display: grid; 
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
-        grid-template-rows: 1fr 1fr 1fr; 
-        gap: 1rem; 
-        grid-template-areas: 
-          "event hero hero spotlight"
-          "weather hero hero spotlight"
-          "join new new spotlight"; 
-      }
-    .hero{
-        grid-area: heroContainer;
+        max-width: 1200px;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
     }
-    .event{
-        grid-area: eventContainer;
+    .mainContent#event{
+        grid-column: 1;
+        grid-row: 1;
     }
-    .weather{ 
-    grid-area: weatherContainer;
+    .mainContent#hero{
+        grid-column: 2;
+        grid-row: 1/3;
+        height: 98%;
     }
-    .new{
-        grid-area: newReleaseContainer;
+    .mainContent#spotlight3{
+        display: block;
     }
-    .spotlight{
-        grid-area: spotlightsHolder;
+    .mainContent#spotlights{
+        display: flex;
+        flex-direction: column;
+        grid-column: 3;
+        grid-row: 1/4;
     }
-    .join{
-        grid-area: joinContainer;
+    .mainContent#weather{
+        grid-column: 1;
+        grid-row: 2;
     }
-
+    .mainContent#join{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .mainContent#NewRelease{
+        grid-column: 2;
+        grid-row: 3;
+    }
+    
 }

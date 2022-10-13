@@ -1,0 +1,49 @@
+@media (min-width: 60rem){
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul{
+        display: inline;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+        margin: 1rem;
+    }
+    .icon{
+        display: none;
+    }
+    main{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 1rem; 
+        grid-template-areas: 
+          "event hero hero spotlight"
+          "weather hero hero spotlight"
+          "join new new spotlight"; 
+      }
+    .hero{
+        grid-area: heroContainer;
+    }
+    .event{
+        grid-area: eventContainer;
+    }
+    .weather{ 
+    grid-area: weatherContainer;
+    }
+    .new{
+        grid-area: newReleaseContainer;
+    }
+    .spotlight{
+        grid-area: spotlightsHolder;
+    }
+    .join{
+        grid-area: joinContainer;
+    }
+
+}
