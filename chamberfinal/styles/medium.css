@@ -1,0 +1,90 @@
+/* 35em is also 560px (if basefont is 16px) */
+@media (min-width: 45em) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 20%;
+        height: 40%;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        /*grid-template-rows: repeat(5, 1fr);*/
+        justify-items: stretch;
+    }
+
+    /*Set the height of each element of main to 92%*/
+    .mainContent {
+        height: 92%;
+    }
+
+    .mainContent#hero {
+        grid-column: 1/5;
+    }
+
+    .mainContent#NewRelease {
+        grid-column: 1/5;
+        grid-row: 2;
+    }
+
+    .mainContent#spotlights {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        grid-column: 1/5;
+        grid-row: 3;
+        height: fit-content;
+    }
+
+    main section:nth-child(4) {
+        /*Unhide Join section on mobile viewport*/
+        display: block;
+        grid-column: 1/5;
+    }
+
+    .mainContent#event {
+        grid-column: 1/4;
+        grid-row: 5;
+    }
+
+    .mainContent#weather {
+        grid-column: 4/5;
+        grid-row: 5;
+        width: auto;
+        
+    }
+
+    .mainContent#join {
+        grid-column: 1/5;
+    }
+
+    /*Footer Style*/
+    footer {
+        display: grid;
+        justify-items: center;
+    }
+
+    #bottom-logo {
+        grid-column: 1;
+    }
+
+    #address {
+        grid-column: 2;
+    }
+
+    #info {
+        grid-column: 3;
+    }
+
+    #main-footer {
+        grid-row: 2;
+        grid-column: 1/4;
+    }
+
+    #bottom-logo {
+        margin-bottom: 10px;
+    }
+}
