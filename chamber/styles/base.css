@@ -65,7 +65,7 @@ header {
 }
 #todaysDate {
     border: 1px solid rgb(194, 201, 175);
-    background-color: #ffffff;
+    background-color:#DEA402;
     color: #041E25;
     grid-column: 1/5;
     grid-row: 2/3;
