@@ -203,26 +203,27 @@ main {
     left: 50px;
 }
 .hero-text h2{
-    color: #fffffe;
-    font-size: 2em;
+    color: #DEA402;
+    font-size: 1.5em;
     font-weight: bolder;
 }
 .hero-link{
     position: absolute;
     bottom: 25px;
     right: 50px;
-    background:#6db784;
-	border: 1px solid #000;
-    border-radius: 12%;
+    background:rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.1);
 	padding: 1.5rem;
-	box-shadow: 0 0 30px #333;
+	box-shadow: 0 0 10px rgb(0 0 0 / 20%);
 	opacity: 0.9;
+    border-radius: 5px;
 }
 .hero-link a{
-    color: #000;
-    font-size: 1.2em;
+    color: #041E25;
 }
 main section:nth-child(4) {
+    /*Hide Join section on mobile viewport*/
     display: none;
 }
 .mainContent#spotlight3{
@@ -230,8 +231,8 @@ main section:nth-child(4) {
 }
 
 .mainContent {
-    border-style: solid;
-    margin:10px;
+    border-style: ridge;
+    margin:7px;
     text-align: center;
     
 }
@@ -243,6 +244,18 @@ main h3, h4{
 }
 .mainContent#spotlights{
     width: 100%;
+}
+#join-us{
+    color: #041E25;
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
 }
 footer{
     margin-top: 10px;

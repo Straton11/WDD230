@@ -8,6 +8,7 @@
     <meta name="description" content="Chamber Home Page for wdd230 at BYU-I."/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Site Plan for City of Idaho Falls Chamber of Commerce</title>
+    <link rel="shortcut icon" href="favicon.ico">
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/medium.css" rel="stylesheet">
@@ -45,31 +46,78 @@
     </header>
     <main>
         <section class="mainContent" id="hero">
-            <p>Hero with site name call to action</p>  
+            <picture>
+                <source media="(max-width: 559px)" srcset="images/temple.webp">
+                <source media="(max-width: 1027px)" srcset="images/temple.webp">
+                <img class="hero-img" src="images/temple.webp" alt="Idaho Falls Temple">
+                <!--<img class="hero-img" src="images/antiguate.jpg" alt="Antigua Guatemala">-->
+            </picture>
+            <div class="hero-text">
+                <h2>Welcome to City of Idaho Falls Chamber of Commerce</h2>
+            </div>
+            <div class="hero-link">
+                <a href="#">Join the Chamber</a>
+            </div>
         </section>
         <section class="mainContent" id="event">
-            <p>Event</p>
+            <h3>Ribon Cutting</h3>
+            <h4>💎 The Diamond Shack</h4>
+            <p>Join us for the grand opening of The Diamond Shack, Thursday at 1:00 p.m. <a href="#" target="_blank">more
+                    info...</a></p>
         </section>
         <section class="mainContent" id="weather">
-            <p>Weather</p>
+            <h3>Weather</h3>
+            <picture>
+                <img src="images/weather.png" alt="Weather icon">
+            </picture>
+            <h4 id="degree"><span id="t">33</span>°F</h4>
+            <h4 id="weather-status">Party Cloudy</h4>
+            <div id="weather-details">
+                <p>Wind Speed: <span id="s">1.5</span> mph</p>
+                <p>Wind Chill: <span id="w"></span></p>
+            </div>
+            
         </section>
         <section class="mainContent" id="NewRelease">
-            <p>News Release</p>
+            <h3>News Release</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, aperiam laboriosam nisi vero
+                eligendi nulla pariatur praesentium animi voluptatem magnam, soluta, porro doloremque fuga deserunt
+                repellendus velit alias obcaecati aspernatur.</p>
         </section>
         <section class="mainContent" id="spotlights">
             <div class="mainContent">
-              <p>Spotlight 1</p>  
+                <h3>Thankful Transport</h3>
+                <picture>
+                    <img src="images/truck.png" alt="truck image">
+                </picture>
+                <h4>¨We get it there for you!</h4>
+                <p>hello@thankfultransport.com <br>+999-999-999 Website</p>
+
             </div>
             <div class="mainContent">
-              <p>Spotlight 2</p>  
+                <h3>Code Primera</h3>
+                <picture>
+                    <img src="images/pencils.png" alt="pencils image">
+                </picture>
+                <h4>An after school coding instructional program.</h4>
+                <p>contact@codeprimera.com <br>+999-999-999 | Website</p>
+
             </div>
             <div class="mainContent" id="spotlight3">
-              <p>Spotlight 3</p>  
+                <h3>Build A Treefort</h3>
+                <picture>
+                    <img src="images/treefort.png" alt="treefort image">
+                </picture>
+                <h4>Over 1000 Plans!</h4>
+                <p>builda@treefort.com <br>+999-999-999 Website</p>
+
             </div>
         </section>
         <section class="mainContent" id="join">
-            <p>Join</p>
+            <a id="join-us" href="#">Join Us!</a>
+            <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
         </section>
+
     </main>
     <footer>
         <div id="bottom-logo">
@@ -90,5 +138,6 @@
         </div>
     </footer>
     <script src="scripts/date.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
