@@ -303,6 +303,7 @@ h3 {
     align-items: center;
     justify-items: center;
     margin: auto;
+    line-height: 0;
 }
 #part1 {
     display: grid;
