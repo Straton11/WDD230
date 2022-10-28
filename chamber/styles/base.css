@@ -282,3 +282,29 @@ footer p{
 .social {
     max-width: 50px;
   }
+.discover {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+article img[data-src] {
+    filter: blur(0.2em);
+}
+  
+article img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+h3 {
+    text-align: center;
+}
+.lazy-load {
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+}
+#part1 {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}

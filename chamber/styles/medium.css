@@ -2,6 +2,19 @@
     h1 {
         font-size: 1.5rem;
     }
+    .discover1 {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-items: center;
+    }
+    .discover {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        grid-column-gap: 20px;
+    }
 
     button {
         width: 20%;
@@ -81,4 +94,16 @@
     #bottom-logo {
         margin-bottom: 10px;
     }
+    img.lazy-load {
+        box-shadow: #000000;
+    }
+    .part1 img {
+        transition: .5s ease;
+    }
+        
+    .part1 img:hover{
+        box-shadow: 0 0 0 10px #000000;
+        transition: .5s ease;
+    }
+    
 }
