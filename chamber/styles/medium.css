@@ -105,5 +105,8 @@
         box-shadow: 0 0 0 10px #000000;
         transition: .5s ease;
     }
+    .part1 {
+        width: 45em;
+    }
     
 }
