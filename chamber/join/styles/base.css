@@ -317,14 +317,16 @@ form {
     margin: auto;
 }
 .basicInfo, .memLvl, .formHead, .top {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .submitBtn {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.top {
-    line-height: 40px;
+label.top {
+    display: block;
+    padding-top: 1rem;
+    font-size: .8rem;
 }
 main.thanks {
     display: grid;
@@ -341,4 +343,10 @@ main.thanks {
 }
 .write {
     margin-top: -400px;
+}fieldset.basicInfo {
+    display: grid;
+    grid-template-columns: auto;
+}
+input {
+    width: 70%;
 }
