@@ -17,42 +17,38 @@
     <script src="scripts/visit.js" defer></script>    
 </head>
 <body>
+    <header>
+        <div id="top-logo">
+            <img class="logos" id="top" src="images/city-idaho-falls.png" alt="Logo">
+        </div>
+        <div id="top-heading">
+            <h1>City of Idaho Falls</h1>
+            <h2>Chamber of Commerce</h2>
+        </div>
 
-<header>
-    <div id="top-logo">
-        <img class="logos" id="top" src="images/city-idaho-falls.png" alt="Logo">
-    </div>
-    <div id="top-heading">
-        <h1>City of Idaho Falls</h1>
-        <h2>Chamber of Commerce</h2>
-    </div>
+        <div id="social">
+            <a href="https://facebook.com" >
+                <img class="social" src="images/facebook2.png" alt="facebook icon">
+            </a>
+            <a href="https://linkedin.com" >
+                <img class="social" src="images/LinkedIn.png" alt="linkedin icon">
+            </a>
+        </div>
+        <button id="hamburgerBtn"><span>&#9776</span><span>X</span></button>
+        <nav>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <p id="todaysDate"></p>
 
-    <div id="social">
-        <a href="https://facebook.com" >
-            <img class="social" src="images/facebook2.png" alt="facebook icon">
-        </a>
-        <a href="https://linkedin.com" >
-            <img class="social" src="images/LinkedIn.png" alt="linkedin icon">
-        </a>
-    </div>
-    <button id="hamburgerBtn"><span>&#9776</span><span>X</span></button>
-    <nav>
-        <ul id="primaryNav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li><a href="#">Directory</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <p id="todaysDate"></p>
-
-</header>
-
-
-<!-- CONTENT HERE -->
-<main class="joinPage">
-        <form method="get" action="thanks.html">
+    </header>
+    <main class="joinPage">
+        <form method="get" action="thankyou.html">
             <fieldset class="basicInfo">
                 <legend class="formHead">Basic Information</legend>
                 <label class="top">First Name*<input type="text" name="fname" required autofocus> </label>
@@ -73,50 +69,45 @@
 
                 <p class="sbs">Bronze Membership gives you access to special monthly training events and 2 round table seat held by the chamber.<br><br>Cost: $20/yr. <br><br></p>
                 <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label>
-                
+                    
                 <p class="sbs">Silver membership gives you access to special monthly training events, 5 round table seat plus free advertizing on our homepage.<br><br>Cost: $40/yr. <br><br></p>
                 <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
                 <p class="sbs">Gold membership gives you access to special monthly training events, 10 round table seat plus free advertizing on our homepage and events.<br><br>Cost: $60/yr. <br><br></p>
+                    
                 
-            
-            </fieldset>
+             </fieldset>
             <fieldset>
                 <legend class="formHead">Describe Your Business</legend>
                 <h4>Description</h4>
                 <label class="textArea">
                     <textarea id="describe" name="describe" rows="4" cols="50" maxlength="250" placeholder="Please describe your business here."></textarea>
                 </label>
-            
+                
             </fieldset>
             <input type="hidden" id="visitTime" name="visitTime" value="">
 
             <input type="submit" value="Join Chamber" class="submitBtn">
 
-        </form>
-
-          
-        
+        </form>  
     </main>
-    
-<!-- FOOTER HERE -->   
-<footer>
-    <div id="bottom-logo">
-        <img class="logos" src="images/city-idaho-falls.png" alt="Logo">
-    </div>
-    <div id="address">
-        <h2>City of Idaho Falls Chamber of Commerce</h2>
-        <p>3477 Pioneer Rd <br>Idaho Falls, ID 83402</p>
-    </div>
-    <div id="info">
-        <p>info@cityofidahofallschambers.org<br>(208)569-9594</p>
-        <a href="https://www.google.com/maps/place/3477+Pioneer+Dr,+Idaho+Falls,+ID+83402/@43.466296,-112.0830363,17z/data=!3m1!4b1!4m5!3m4!1s0x535459b07e08659d:0xdf743ea90941f088!8m2!3d43.4662921!4d-112.0808423"
-            target="_blank">📍Location Map</a>
-    </div>
-    <div id="main-footer">
-        <p id="p-footer">&copy; <span id="currentYear"></span> | City of Idaho Falls Chamber of Commerce | <b>Straton Facer</b> | WDD230 Project | <a href="stratonfacer1@gmail.com">stratonfacer1@gmail.com</a> | Last Updated: <span id="lstmoddate"></span></p>
-        <br>
-    </div>
-</footer>
 
+    <footer>
+        <div id="bottom-logo">
+            <img class="logos" src="images/city-idaho-falls.png" alt="Logo">
+        </div>
+        <div id="address">
+            <h2>City of Idaho Falls Chamber of Commerce</h2>
+            <p>3477 Pioneer Rd <br>Idaho Falls, ID 83402</p>
+        </div>
+        <div id="info">
+            <p>info@cityofidahofallschambers.org<br>(208)569-9594</p>
+            <a href="https://www.google.com/maps/place/3477+Pioneer+Dr,+Idaho+Falls,+ID+83402/@43.466296,-112.0830363,17z/data=!3m1!4b1!4m5!3m4!1s0x535459b07e08659d:0xdf743ea90941f088!8m2!3d43.4662921!4d-112.0808423"
+                target="_blank">📍Location Map</a>
+        </div>
+        <div id="main-footer">
+            <p id="p-footer">&copy; <span id="currentYear"></span> | City of Idaho Falls Chamber of Commerce | <b>Straton Facer</b> | WDD230 Project | <a href="stratonfacer1@gmail.com">stratonfacer1@gmail.com</a> | Last Updated: <span id="lstmoddate"></span></p>
+            <br>
+        </div>
+    </footer>
 </body>
 </html>
