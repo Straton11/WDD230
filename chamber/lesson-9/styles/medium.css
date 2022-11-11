@@ -1,0 +1,168 @@
+@media (min-width: 45em) {
+    #directory {
+        display: block;
+    }
+    div.cards section:hover {
+        box-shadow: 0px 0px 5px 5px #466d72;
+    } 
+
+
+    .list section {
+        flex-direction: row;
+
+    }
+
+    .list section h2 {
+        display: block;
+        font-size: 12px;
+    }
+    .list section h3,h4,h5,h6,p {
+        display: block;
+        font-size: 7px;
+    }
+    .list section img {
+        margin-top: 0px;
+        max-width: 80px;
+    }
+
+
+    
+    main {display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        }
+
+    .hero {
+        grid-column: span 3;
+        margin: 10px 0px;
+        grid-row: 1;
+    }
+    
+
+    .news {margin: 10px 0px;
+        grid-column: span 3;
+        grid-row: 2;
+        max-width: 1000px;
+    }
+
+    .spotlight {
+        margin: 10px 0px;
+        grid-column: span 3;
+        grid-row: 3;
+        display: flex;
+        height: 400px;
+        max-width: 1000px;
+        padding: 10px;
+        justify-content: space-around;
+        background-color: #079c6da7
+    }
+
+    .spotlight1,
+    .spotlight2,
+    .spotlight3 {
+        margin: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+        border: 1px solid #079c6da7;
+        padding: 10px 10px;
+        width: 310px;
+    }
+
+
+    .spotlight img {
+        max-width: 80px;
+    }
+    .spotlight3 {
+        display: none;
+    }
+
+
+    .join {display: grid;
+        margin: 10px 0px;
+        grid-column: span 3;
+        grid-row: 4;
+        background-color: #079c6da7;
+        justify-content: center;
+    }
+
+    .join h2 {
+        background-color: #5C0029;
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        max-width: 600px;
+        text-align: center;
+    }
+    .event {margin: 10px 10px 10px 0px;
+        grid-column: span 2;
+        grid-row: 5;
+        }
+    .weather {margin: 10px 0px 10px 10px; 
+        grid-column: 3;
+        grid-row: 5;
+    }   
+    .weather h3{
+    grid-column: 3/3;
+    grid-row: 2/3;
+    text-align: center;
+    margin:0;
+    padding:10px;
+    margin-right: 0px;
+}
+    .weather img {
+        max-width: 50px;
+        position: absolute;
+        top: 60px;
+        left: 50px;
+        
+    }
+    
+    footer div:nth-child(1) {
+        display: flex;
+        
+    }
+
+    footer div:nth-child(1) img, footer div:nth-child(1) p {
+        margin: auto
+    }
+
+    main {
+        display: block;
+    }
+    
+    .wireframe img {
+        display: block;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+
+    /*directory*/
+    #directory {
+        display: block;
+    }
+    div.cards section:hover {
+        box-shadow: 0px 0px 5px 5px #466d72;
+    } 
+
+
+    .list section {
+        flex-direction: row;
+
+    }
+
+    .list section h2 {
+        display: block;
+        font-size: 12px;
+    }
+    .list section h3,h4,h5,h6,p {
+        display: block;
+        font-size: 7px;
+    }
+    .list section img {
+        margin-top: 0px;
+        max-width: 80px;
+    }
+    
+}

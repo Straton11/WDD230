@@ -1,0 +1,86 @@
+{
+    "businesses": [
+      {
+        "business": "Idaho Falls YMCA",
+        "contact": "Julie Taylor",
+        "phonenumber": "(208)523-0600",
+        "email": "info@idahofallsymca.org",
+        "website": "https://www.idahofallsymca.org/",
+        "imageurl": "https://straton11.github.io/wdd230/lesson-9/images/ymca.jpeg"
+      },
+
+      {
+        "business": "Kartchner Property Management",
+        "contact": "Jessica Barton",
+        "phonenumber": "(208)529-0010",
+        "email": "info@kpm.com",
+        "website": "https://www.thefallsapts.com",
+        "imageurl": "https://straton11.github.io/wdd230/lesson-9/images/kartchner.png"
+      },
+
+      {
+        "business": "First Call Jewel ",
+        "contact": "Kevin Bidstrup",
+        "phonenumber": "(208)529-2793",
+        "email": "kevin@firstcalljewel.com",
+        "website": "https://www.firstcalljewel.com",
+        "imageurl": "https://straton11.github.io/wdd230/lesson-9/images/firstcall.png"
+      },
+
+      {
+        "business": "Teton Steel",
+        "contact": "Kadin Bloxham",
+        "phonenumber": "(208)528-6600",
+        "email": "kb@tetonsteelidaho.com",
+        "website": "https://www.tetonsteelidaho.com/",
+        "imageurl": "https://straton11.github.io/wdd230/lesson-9/images/tetonsteel.png"
+      },
+
+      {
+        "business": "Club Apple",
+        "contact": "Stacie Anderson",
+        "phonenumber": "(208)529-8600",
+        "email": "stacie@theclubapple.com",
+        "website": "https://theclubapple.com/",
+        "imageurl": "https://straton11.github.io/wdd230/lesson-9/images/clubapple.jpeg"
+      },
+
+      {
+        "business": "Wood Funeral Home",
+        "contact": "John Wood",
+        "phonenumber": "(208)522-2992",
+        "email": "john@woodfuneralhome.com",
+        "website": "https://www.woodfuneralhome.com/",
+        "imageurl": "https://straton11.github.io/wdd230/lesson-9/images/woodfuneral.png"
+      },
+
+      {
+        "business": "Melaleuca",
+        "contact": "Frank Vandersloot",
+        "phonenumber": "(208)522-0700",
+        "email": "frank@melaleuca.com",
+        "website": "https://www.melaleuca.com/",
+        "imageurl": "https://straton11.github.io/wdd230/lesson-9/images/melaleuca.jpeg"
+      },
+
+      {
+        "business": "Evergreen Lawn and Tree LLC",
+        "contact": "Richard Bell",
+        "phonenumber": "(208)251-3172",
+        "email": "rich@evergreenlt.com",
+        "website": "https://www.evergreenlt.com/",
+        "imageurl": "https://straton11.github.io/wdd230/lesson-9/images/evergreen.png"
+      },
+
+      {
+        "business": "IF Signs",
+        "contact": "Nathan Johns",
+        "phonenumber": "(208)524-4124",
+        "email": "nate@ifsigns.com",
+        "website": "https://www.ifsigns.com/",
+        "imageurl": "https://straton11.github.io/wdd230/lesson-9/images/ifsigns.png"
+      }
+      
+
+    ]
+}
