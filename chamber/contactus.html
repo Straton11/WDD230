@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover Page for wdd230 at BYU-I."/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Join page for City of Idaho Falls Chamber of Commerce</title>
+    <title>Contact page for City of Idaho Falls Chamber of Commerce</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/base.css" rel="stylesheet">
@@ -54,40 +54,20 @@
                 <legend class="formHead">Basic Information</legend>
                 <label class="top">First Name*<input type="text" name="fname" required autofocus> </label>
                 <label class="top">Last Name*<input type="text" name="lname" required></label>
-                <label class="top">Title <input type="text" name="title" pattern="*[A-Z][a-z][\s][\-]"></label>
                 <label class="top">Email*<input type="email" name="email" placeholder="your@email.com" required></label>
                 <label class="top">Phone<input type="tel" name="phone" placeholder="(123)456-7890" required></label>
-                <label class="top">Business Name <input type="text" name="busName" required></label>
             </fieldset>
 
-            <fieldset class="memLvl">
-                <legend class="formHead">Membership Level</legend>
-
-                <label class="sbs"><input type="radio" name="membership" value="np"> NP Membership</label>
-
-                    <p class="sbs">As a non-profit business you get all the benefits of a silver membership free of charge<br><br>Cost: $0.<br><br></p>
-                <label class="sbs"><input type="radio" name="membership" value="bronze">Bronze Membership</label> 
-
-                <p class="sbs">Bronze Membership gives you access to special monthly training events and 2 round table seat held by the chamber.<br><br>Cost: $20/yr. <br><br></p>
-                <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label>
-                    
-                <p class="sbs">Silver membership gives you access to special monthly training events, 5 round table seat plus free advertizing on our homepage.<br><br>Cost: $40/yr. <br><br></p>
-                <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
-                <p class="sbs">Gold membership gives you access to special monthly training events, 10 round table seat plus free advertizing on our homepage and events.<br><br>Cost: $60/yr. <br><br></p>
-                    
-                
-             </fieldset>
             <fieldset>
-                <legend class="formHead">Describe Your Business</legend>
-                <h4>Description</h4>
+                <legend class="formHead">Your Question</legend>
                 <label class="textArea">
-                    <textarea id="describe" name="describe" rows="4" cols="50" maxlength="250" placeholder="Please describe your business here."></textarea>
+                    <textarea id="describe" name="describe" rows="4" cols="50" maxlength="250" placeholder="Please enter your question here."></textarea>
                 </label>
                 
             </fieldset>
             <input type="hidden" id="visitTime" name="visitTime" value="">
 
-            <input type="submit" value="Join Chamber" class="submitBtn">
+            <input type="submit" value="Submit" class="submitBtn">
 
         </form>  
     </main>

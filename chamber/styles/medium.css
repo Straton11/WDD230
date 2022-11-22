@@ -1,4 +1,26 @@
 @media (min-width: 45em) {
+    div.cards section:hover {
+        box-shadow: 0px 0px 5px 5px #466d72;
+    } 
+
+
+    .list section {
+        flex-direction: row;
+
+    }
+
+    .list section h2 {
+        display: block;
+        font-size: 12px;
+    }
+    .list section h3,h4,h5,h6,p {
+        display: block;
+        font-size: 7px;
+    }
+    .list section img {
+        margin-top: 0px;
+        max-width: 80px;
+    }
     h1 {
         font-size: 1.5rem;
     }
