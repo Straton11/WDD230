@@ -4,14 +4,11 @@
     }
     .discover {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-column-gap: 20px;
         align-items: center;
         justify-items: center;
     }
-    button {
-        display: none;
-    }
+
     header{
         grid-template-rows: 2;
     }
@@ -70,6 +67,12 @@
     }
     .part1 {
         width: 64rem;
+    }
+    .list h2 {
+        font-size: 15px;
+    }
+    .list h3,h4,h5,h6,p {
+        font-size: 10px;
     }
     
 }

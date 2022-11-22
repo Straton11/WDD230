@@ -321,3 +321,109 @@ h3 {
     display: grid;
     grid-template-rows: auto auto auto;
 }
+fieldset.basicInfo {
+    display: grid;
+    grid-template-columns: auto;
+}
+label.top {
+    column-span: all;
+    padding-left: 10px;
+}
+form {
+    width: 90%;
+}
+h1#heading {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+section.top1 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+#grid, #list {
+    font-size: 20px;
+    padding: 15px;
+    color: white;
+    background: #466d72;
+    border-radius: 10px;
+    border: 1px outset #DEA402;
+    margin: 30px;
+}
+
+#grid:hover, #list:hover {
+    box-shadow: 0px 0px 5px 5px #466d72;
+}
+
+div.cards {
+    height:100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding: 5px;
+    background-color: white;
+    color: #466d72;
+    
+}
+
+div.cards section {
+    background-color: #DEA402;
+    padding: 5px;
+    margin: 5px;
+}
+
+.cards div h2,h2,h3,h4,h5,h6,p {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+}
+
+.cards img {
+    display: block;
+    margin:0 auto;
+    padding-bottom: 10px;
+    max-width: 50%;
+}
+
+.list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.list section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px 5px;
+    text-align: left;
+    padding: 2px;
+    background-color: #DEA402;
+    color: #466d72;
+}
+.list section h2 {
+    font-size: 20px;
+}
+
+.list section h3,h4,h5,h6,p {
+    font-size: 15px;
+}
+
+#directory div.list section h3,h4,h5,h6,p {
+    font-size: 15px;
+}
+
+.list section img {
+    max-width: 150px;
+    border: 1px solid #466d72;
+    margin-top: 10px;
+}
+
+.list section h2,h3, h4 {
+    display: none;
+}
