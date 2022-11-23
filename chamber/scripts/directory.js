@@ -1,4 +1,5 @@
-const requestURL = 'https://straton11.github.io/wdd250/lesson-9/data.json';
+const requestURL = 'https://straton11.github.io/wdd230/data.json';
+const card = document.querySelector('.card');
 const cards = document.querySelector('.cards');
 
 
@@ -43,7 +44,6 @@ function displayBusinesses(company) {
     card.appendChild(h4);
     card.appendChild(h5);
     card.appendChild(h6);
-    card.appendChild(p);
 
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.cards').appendChild(card);

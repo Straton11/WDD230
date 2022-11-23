@@ -2,6 +2,10 @@
     button#hamburgerBtn {
         display: none;
     }
+    main.contactPage {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
     .list h2 {
         font-size: 15px;
     }

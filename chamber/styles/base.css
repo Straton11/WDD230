@@ -534,3 +534,20 @@ div.cards section {
 img#homeimg {
     max-width: 150px;
 }
+img#map {
+    max-width: 400px;
+    align-items: center;
+    justify-content: center;
+}
+a.maps {
+    display: grid;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-content: center;
+}
+section#heading {
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
