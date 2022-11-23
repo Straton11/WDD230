@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Chamber Home Page for wdd230 at BYU-I."/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Site Plan for City of Idaho Falls Chamber of Commerce</title>
+    <title>Home Page for City of Idaho Falls Chamber of Commerce</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/base.css" rel="stylesheet">
@@ -45,6 +45,11 @@
             </ul>
         </nav>
         <p id="todaysDate"></p>
+        <div class="banner">
+            <h4>
+                🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+            </h4>
+        </div>
     </header>
     <main>
         <section class="mainContent" id="hero">
@@ -102,8 +107,7 @@
                 </ul>
         </section>
         <section class="mainContent" id="spotlights">
-            <div class="mainContent">
-            <div class="spot"></div>
+            <div class="mainContent" id="spotlight">
                 <h3>Blue Cross of Idaho</h3>
                 <picture>
                     <img id="homeimg" src="images/bluecross.jpeg" alt="Blue Cross of Idaho image">
@@ -112,7 +116,7 @@
                 <p>bret.rumbeck@bcidaho.com <br>208-932-0054 | <a href="https://www.bcidaho.com/" target="_blank">Website</a></p>
 
             </div>
-            <div class="mainContent">
+            <div class="mainContent" id="spotlight">
                 <h3>Business After Hours</h3>
                 <picture >
                     <img id="homeimg" src="images/businessafter.jpeg" alt="After Hours image">
@@ -157,6 +161,6 @@
     </footer>
     <script src="scripts/date.js"></script>
     <script src="scripts/windchill.js"></script>
-    <script src="scripts/directory.js"></script>
+    <script src="scripts/spotlight.js"></script>
 </body>
 </html>

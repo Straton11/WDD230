@@ -551,3 +551,9 @@ section#heading {
     grid-column-start: 1;
     grid-column-end: 3;
 }
+div#spotlight {
+    background-color: #DEA402;
+}
+div#spotlight3 {
+    background-color: #DEA402;
+}
