@@ -459,6 +459,9 @@ section.top1 {
 #grid:hover, #list:hover {
     box-shadow: 0px 0px 5px 5px #466d72;
 }
+.lazy-load:hover {
+    box-shadow: 0px 0px 5px 5px #DEA402;
+}
 
 div.cards {
     height:100%;
