@@ -291,7 +291,7 @@ p#data {
 }
 #degree{
     align-self: center;
-    font-size: 2.5vw;
+    font-size: 1.5vw;
     margin-right: 7px;
 }
 #weather-status{
@@ -556,4 +556,7 @@ div#spotlight {
 }
 div#spotlight3 {
     background-color: #DEA402;
+}
+section#weather {
+    background-color: #466d72;
 }
