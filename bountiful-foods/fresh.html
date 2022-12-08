@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bountiful Foods Home Page for wdd230 at BYU-I."/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home Page for Bountiful Foods</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="top-logo">
+            <a href="index.html">
+                <img class="logos" id="top" src="images/bountifulfoods.png" alt="Bountiful Foods Logo">
+            </a>
+        </div>
+        <div id="top-heading">
+            <h1>Bountiful Foods</h1>
+            <h2>Carlsbad, California</h2>
+        </div>
+
+        <div id="social">
+            <a href="https://facebook.com" >
+                <img class="social" src="images/facebook2.png" alt="facebook icon">
+            </a>
+            <a href="https://linkedin.com" >
+                <img class="social" src="images/LinkedIn.png" alt="linkedin icon">
+            </a>
+        </div>
+        <button id="hamburgerBtn"><span>&#9776</span><span>X</span></button>
+        <nav>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="get" action="thankyou.html">
+            <fieldset class="basicInfo">
+                <legend class="formHead">Information</legend>
+                <label class="top">First Name*<input type="text" name="fname" required autofocus> </label>
+                <label class="top">Email*<input type="email" name="email" placeholder="your@email.com" required></label>
+                <label class="top">Phone<input type="tel" name="phone" placeholder="(123)456-7890" required></label>
+                <select name="user_fruit_type" id="fruit_type" required>
+                    <option value="" disabled selected>Fruit Choice #1</option>
+                    <option value="single-bed">Apple</option>
+                    <option value="two_single-bed">Apricot</option>
+                    <option value="single_one_king">Avacado</option>
+                    <option value="two_queens">Bannana</option>
+                    <option value="one_king">Blackberry</option>
+                    <option value="one_king">Blueberry</option>
+                    <option value="one_king">Cherry</option>
+                    <option value="one_king">Dragonfruit</option>
+                    <option value="one_king">Durian</option>
+                    <option value="one_king">Feijoa</option>
+                    <option value="one_king">Fig</option>
+                    <option value="one_king">Gooseberry</option>
+                    <option value="one_king">Grape</option>
+                    <option value="one_king">Grapes</option>
+                    <option value="one_king">GreenApple</option>
+                    <option value="one_king">Guava</option>
+                    <option value="one_king">Kiwi</option>
+                    <option value="one_king">Kiwifruit</option>
+                    <option value="one_king">Lemon</option>
+                    <option value="one_king">Lime</option>
+                    <option value="one_king">Lingonberry</option>
+                    <option value="one_king">Lechee</option>
+                    <option value="one_king">Mango</option>
+                    <option value="one_king">Melon</option>
+                    <option value="one_king">Morus</option>
+                    <option value="one_king">Orange</option>
+                    <option value="one_king">Papaya</option>
+                    <option value="one_king">Passionfruit</option>
+                    <option value="one_king">Pear</option>
+                    <option value="one_king">Persimmon</option>
+                    <option value="one_king">Pinapple</option>
+                    <option value="one_king">Pitahaya</option>
+                    <option value="one_king">Plum</option>
+                    <option value="one_king">Pomagranate</option>
+                    <option value="one_king">Raspberry</option>
+                    <option value="one_king">Strawberry</option>
+                    <option value="one_king">Tangarine</option>
+                    <option value="one_king">Tomato</option>
+                    <option value="one_king">Watermelon</option>
+                </select>
+                <select name="user_fruit_type" id="fruit_type" required>
+                    <option value="" disabled selected>Fruit Choice #2</option>
+                    <option value="single-bed">Apple</option>
+                    <option value="two_single-bed">Apricot</option>
+                    <option value="single_one_king">Avacado</option>
+                    <option value="two_queens">Bannana</option>
+                    <option value="one_king">Blackberry</option>
+                    <option value="one_king">Blueberry</option>
+                    <option value="one_king">Cherry</option>
+                    <option value="one_king">Dragonfruit</option>
+                    <option value="one_king">Durian</option>
+                    <option value="one_king">Feijoa</option>
+                    <option value="one_king">Fig</option>
+                    <option value="one_king">Gooseberry</option>
+                    <option value="one_king">Grape</option>
+                    <option value="one_king">Grapes</option>
+                    <option value="one_king">GreenApple</option>
+                    <option value="one_king">Guava</option>
+                    <option value="one_king">Kiwi</option>
+                    <option value="one_king">Kiwifruit</option>
+                    <option value="one_king">Lemon</option>
+                    <option value="one_king">Lime</option>
+                    <option value="one_king">Lingonberry</option>
+                    <option value="one_king">Lechee</option>
+                    <option value="one_king">Mango</option>
+                    <option value="one_king">Melon</option>
+                    <option value="one_king">Morus</option>
+                    <option value="one_king">Orange</option>
+                    <option value="one_king">Papaya</option>
+                    <option value="one_king">Passionfruit</option>
+                    <option value="one_king">Pear</option>
+                    <option value="one_king">Persimmon</option>
+                    <option value="one_king">Pinapple</option>
+                    <option value="one_king">Pitahaya</option>
+                    <option value="one_king">Plum</option>
+                    <option value="one_king">Pomagranate</option>
+                    <option value="one_king">Raspberry</option>
+                    <option value="one_king">Strawberry</option>
+                    <option value="one_king">Tangarine</option>
+                    <option value="one_king">Tomato</option>
+                    <option value="one_king">Watermelon</option>
+                </select>
+                <select name="user_fruit_type" id="fruit_type" required>
+                    <option value="" disabled selected>Fruit Choice #3</option>
+                    <option value="single-bed">Apple</option>
+                    <option value="two_single-bed">Apricot</option>
+                    <option value="single_one_king">Avacado</option>
+                    <option value="two_queens">Bannana</option>
+                    <option value="one_king">Blackberry</option>
+                    <option value="one_king">Blueberry</option>
+                    <option value="one_king">Cherry</option>
+                    <option value="one_king">Dragonfruit</option>
+                    <option value="one_king">Durian</option>
+                    <option value="one_king">Feijoa</option>
+                    <option value="one_king">Fig</option>
+                    <option value="one_king">Gooseberry</option>
+                    <option value="one_king">Grape</option>
+                    <option value="one_king">Grapes</option>
+                    <option value="one_king">GreenApple</option>
+                    <option value="one_king">Guava</option>
+                    <option value="one_king">Kiwi</option>
+                    <option value="one_king">Kiwifruit</option>
+                    <option value="one_king">Lemon</option>
+                    <option value="one_king">Lime</option>
+                    <option value="one_king">Lingonberry</option>
+                    <option value="one_king">Lechee</option>
+                    <option value="one_king">Mango</option>
+                    <option value="one_king">Melon</option>
+                    <option value="one_king">Morus</option>
+                    <option value="one_king">Orange</option>
+                    <option value="one_king">Papaya</option>
+                    <option value="one_king">Passionfruit</option>
+                    <option value="one_king">Pear</option>
+                    <option value="one_king">Persimmon</option>
+                    <option value="one_king">Pinapple</option>
+                    <option value="one_king">Pitahaya</option>
+                    <option value="one_king">Plum</option>
+                    <option value="one_king">Pomagranate</option>
+                    <option value="one_king">Raspberry</option>
+                    <option value="one_king">Strawberry</option>
+                    <option value="one_king">Tangarine</option>
+                    <option value="one_king">Tomato</option>
+                    <option value="one_king">Watermelon</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend class="formHead">Any Special Instructions</legend>
+                <label class="textArea">
+                    <textarea id="describe" name="describe" rows="4" cols="50" maxlength="250" placeholder="Please describe your business here."></textarea>
+                </label>
+                
+            </fieldset>
+            <input type="hidden" id="visitTime" name="visitTime" value="">
+
+            <input type="submit" value="Build Your Smoothie" class="submitBtn">
+
+        </form> 
+    </main>
+    <footer>
+        <div id="bottom-logo">
+            <img class="logos" src="images/bountifulfoods.png" alt="Bountiful Foods Logo">
+        </div>
+        <div id="address">
+            <h2>Bountiful Foods</h2>
+            <p>Carlsbad, California</p>
+        </div>
+        <div id="info">
+            <p>info@bountifulfoods.com<br>(408)552-9789</p>
+            <a href="https://www.google.com/maps/place/3477+Pioneer+Dr,+Idaho+Falls,+ID+83402/@43.466296,-112.0830363,17z/data=!3m1!4b1!4m5!3m4!1s0x535459b07e08659d:0xdf743ea90941f088!8m2!3d43.4662921!4d-112.0808423"
+                target="_blank">📍Location Map</a>
+        </div>
+        <div id="main-footer">
+            <p id="p-footer">&copy; <span id="currentYear"></span> | Bountiful Foods | <b>Straton Facer</b> | WDD230 Project | <a href="stratonfacer1@gmail.com">stratonfacer1@gmail.com</a> | Last Updated: <span id="lstmoddate"></span></p>
+            <br>
+        </div>
+    </footer>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlight.js"></script>
+</body>
+</html>

@@ -47,6 +47,8 @@ function displayBusinesses(company) {
 
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.cards').appendChild(card);
+
+    
 }
 
 /*button*/

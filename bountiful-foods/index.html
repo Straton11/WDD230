@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bountiful Foods Home Page for wdd230 at BYU-I."/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home Page for Bountiful Foods</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="top-logo">
+            <a href="index.html">
+                <img class="logos" id="top" src="images/bountifulfoods.png" alt="Bountiful Foods Logo">
+            </a>
+        </div>
+        <div id="top-heading">
+            <h1>Bountiful Foods</h1>
+            <h2>Carlsbad, California</h2>
+        </div>
+
+        <div id="social">
+            <a href="https://facebook.com" >
+                <img class="social" src="images/facebook2.png" alt="facebook icon">
+            </a>
+            <a href="https://linkedin.com" >
+                <img class="social" src="images/LinkedIn.png" alt="linkedin icon">
+            </a>
+        </div>
+        <button id="hamburgerBtn"><span>&#9776</span><span>X</span></button>
+        <nav>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="mainContent" id="hero">
+            <picture>
+                <img class="hero-img" src="images/fruithero.jpeg" alt="Picture of Fruit and Produce">
+                <!--<img class="hero-img" src="images/antiguate.jpg" alt="Antigua Guatemala">-->
+            </picture>
+            <div class="hero-text">
+                <h2>Welcome to Bountiful Foods</h2>
+            </div>
+            
+        </section>
+        <h2>Create Your Own Tasty Drink!</h2>
+        <div class="hero-link">
+            <a href="fresh.html">Start Now!</a>
+        </div>
+        <section class="mainContent" id="weather">
+            <h3>Weather</h3>
+            <img id="weatherIcon" src="" alt="">
+            <h4 id="degree"><span id="temp"></span> &#8457;</h4>
+            <h4 id="condition"></h4>
+            <hr>
+            <p id="data">Wind Speed: <span id="windSpeed"></span> mph <br>
+            Wind Chill: <span id="windChill"></span> &#8457;</p>
+        </section>
+        <section class="mainContent" id="weather">
+            <div id="bot-weath" class="row-center">
+                <div id="day1" class="forecast">
+                    <p id="dOW1"></p>
+                    <p id="hi1" class="hi"></p>
+                    <p id="lo1" class="lo"></p>
+                </div>
+                <div id="day2" class="forecast">
+                    <p id="dOW2"></p>
+                    <p id="hi2" class="hi"></p>
+                    <p id="lo2" class="lo"></p>
+                </div>
+                <div id="day3" class="forecast">
+                    <p id="dOW3"></p>
+                    <p id="hi3" class="hi"></p>
+                    <p id="lo3" class="lo"></p>
+                </div>
+            </div>
+        </section>
+        <section class="mainContent" id="join">
+            <p>Bountiful Foods is small business specializing in organic, locally grown foods. They are physically located in Carlsbad, California, however, they have many food trucks that cover the coastal area from Los Angeles to San Diego. The company sells fruits and produce directly from the farmers in the area, but also uses some national and international suppliers. The owner-operated company caters to walk in traffic at their storefront in Carlsbad and, of course, their food trucks. They deliver and manage those orders on the phone and via the website. The mission is to provide fresh and healthy food options, including organic, made to order, fruit drinks and fruit bags, to the local population and to tourists visiting the coastal areas. The theme should support healthy eating, organic bounty, and convenience.</p>
+        </section>
+
+    </main>
+    <footer>
+        <div id="bottom-logo">
+            <img class="logos" src="images/bountifulfoods.png" alt="Bountiful Foods Logo">
+        </div>
+        <div id="address">
+            <h2>Bountiful Foods</h2>
+            <p>Carlsbad, California</p>
+        </div>
+        <div id="info">
+            <p>info@bountifulfoods.com<br>(408)552-9789</p>
+            <a href="https://www.google.com/maps/place/3477+Pioneer+Dr,+Idaho+Falls,+ID+83402/@43.466296,-112.0830363,17z/data=!3m1!4b1!4m5!3m4!1s0x535459b07e08659d:0xdf743ea90941f088!8m2!3d43.4662921!4d-112.0808423"
+                target="_blank">📍Location Map</a>
+        </div>
+        <div id="main-footer">
+            <p id="p-footer">&copy; <span id="currentYear"></span> | City of Idaho Falls Chamber of Commerce | <b>Straton Facer</b> | WDD230 Project | <a href="stratonfacer1@gmail.com">stratonfacer1@gmail.com</a> | Last Updated: <span id="lstmoddate"></span></p>
+            <br>
+        </div>
+    </footer>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/weather1.js"></script>
+</body>
+</html>

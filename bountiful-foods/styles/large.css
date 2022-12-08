@@ -1,0 +1,58 @@
+@media only screen and (min-width: 64rem) {
+    @media only screen and (min-width: 64rem) {
+        button#hamburgerBtn {
+            display: none;
+        }
+        main.contactPage {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .list h2 {
+            font-size: 15px;
+        }
+        .list h3,h4,h5,h6,p {
+            font-size: 10px;
+        }
+        h2{
+            font-size: 1.2rem;
+        }
+        .discover {
+            display: grid;
+            grid-column-gap: 20px;
+            align-items: center;
+            justify-items: center;
+        }
+    
+        header{
+            grid-template-rows: 2;
+        }
+        nav{
+            grid-column: 3;
+            grid-row: 1;
+            width: auto;
+            border: none;
+        }
+        nav ul {
+            display: flex;
+            justify-content:center;
+            
+        }
+        nav ul li a {
+            padding: .5rem 1rem;
+            border: none;
+        }
+        nav ul li a:hover {
+            background-color: #DEA402;
+        }
+        .part1 {
+            width: 64rem;
+        }
+        .list h2 {
+            font-size: 15px;
+        }
+        .list h3,h4,h5,h6,p {
+            font-size: 10px;
+        }
+        
+    }
+}
