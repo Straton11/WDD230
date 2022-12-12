@@ -1,4 +1,4 @@
-const url = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
+const url = 'https://straton11.github.io/wdd230/bountiful-foods/json/fruit.json';
 let fruits = [];
 let drinksMade = Number(window.localStorage.getItem("drinksMade"));
 
