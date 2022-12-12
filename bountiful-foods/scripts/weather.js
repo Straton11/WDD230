@@ -1,16 +1,19 @@
-const units = "&units=Imperial";
-const appid = "&appid=0cd9fb45bd729bfe668378eb17d0284a";
+const tempIn = document.querySelector("#temp");
+const humidity = document.querySelector("#humidity");
+const condition  = document.querySelector("#condition");
+const weatherIcon = document.querySelector("#weatherIcon");
+const windSpeedIn = document.querySelector("#windSpeed");
+const alertInfo = document.querySelector("#alertInfo");
 
-const curURL = 'https://api.openweathermap.org/data/2.5/weather?q=Carlsbad' +units +appid;
-const forURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=33.1581&lon=-117.3506&exclude=current,hourly,minutely,alerts' +units +appid;
-
-async function apiFetch(apiURL, curFor) {
+const url = "https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&exclude=hourly,minutely&appid=8017c1d5aea32b6094764ab6d12a29de&units=imperial"
+async function apiFetch() {
     try {
-      const response = await fetch(apiURL);
+      const response = await fetch(url);
       if (response.ok) {
-        const data = await response.json();
-        console.log(data); // this is for testing the call
-        displayResults(data, curFor);
+          const data = await response.json();
+          console.log(data); 
+          displayResults(data);
+          calWindChill(tempIn, windSpeedIn);
       } else {
           throw Error(await response.text());
       }
@@ -18,70 +21,53 @@ async function apiFetch(apiURL, curFor) {
         console.log(error);
     }
   }
+  
+apiFetch();
 
-function  displayResults(weatherData, curFor = "current") {
-    // Current Weather
-    if(curFor == "current"){
-        const temp = weatherData.main.temp.toFixed(0);
-        document.getElementById('temp').textContent = temp +"°F";
-        const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-        const desc = weatherData.weather[0].description;
-        const captionDesc = document.getElementById('conditions');
-        const humidEl = document.getElementById('humid');
-        const humidAPI = weatherData.main.humidity;
-        console.log(humidAPI);
-        const weathIMG = document.getElementById('weath-img');
-        weathIMG.setAttribute('src', iconsrc);
-        weathIMG.setAttribute('alt', desc);
-        humidEl.textContent = `Humidity: ${humidAPI}%` ;
-        captionDesc.textContent = desc;
-
-        weatherIcon.setAttribute('src', iconsrc);
-        weatherIcon.setAttribute('alt', desc);
-    }
-    // Forecast
-    else{
-        const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-        // Get relevant API info
-        const date = new Date();
-        const today = date.getDay();
-
-        const hi1 = weatherData.daily[0].temp.max.toFixed(0);
-        const hi2 = weatherData.daily[1].temp.max.toFixed(0);
-        const hi3 = weatherData.daily[2].temp.max.toFixed(0);
-
-        const lo1 = weatherData.daily[0].temp.min.toFixed(0);
-        const lo2 = weatherData.daily[1].temp.min.toFixed(0);
-        const lo3 = weatherData.daily[2].temp.min.toFixed(0);
-
-        // DOM elements to be manipulated
-        const day1 = document.getElementById("dOW1");
-        day1.textContent = weekday[today+1];
-        const day2 = document.getElementById("dOW2");
-        day2.textContent = weekday[today+2];
-        const day3 = document.getElementById("dOW3");
-        day3.textContent = weekday[today+3];
-
-        const sufFar = " °F"
-        const hiEl1 = document.getElementById("hi1");
-        hiEl1.textContent = hi1 +sufFar;
-        const hiEl2 = document.getElementById("hi2");
-        hiEl2.textContent = hi2 +sufFar;
-        const hiEl3 = document.getElementById("hi3");
-        hiEl3.textContent = hi3 +sufFar;
-
-        const loEl1 = document.getElementById("lo1");
-        loEl1.textContent = lo1 +sufFar;
-        const loEl2 = document.getElementById("lo2");
-        loEl2.textContent = lo2 +sufFar;
-        const loEl3 = document.getElementById("lo3");
-        loEl3.textContent = lo3 +sufFar;
-
-
-    }
+function  displayResults(weatherData) {    
+    tempIn.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+    humidity.innerHTML = `${weatherData.main.humidity.toFixed(0)}`;
+    windSpeedIn.innerHTML =`${weatherData.wind.speed.toFixed(0)}`;
+    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+    condition.innerHTML = weatherData.weather[0].description;
     
 
+    
+    const lower = condition.innerHTML.toLowerCase();
+    const str = lower.split(' ');
+    for (let i = 0; i < str.length; i++) {
+        str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+    }
+    let word = str.join(' ');
+  
+
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', word);
+    captionDesc.textContent = word;
+    
 }
 
-apiFetch(curURL, "current");
-apiFetch(forURL, "forecast");
+
+var temperature = parseFloat(document.querySelector('#temp').textContent)
+console.log(temperature)
+
+
+var windSpeed = parseFloat(document.querySelector('#windSpeed').textContent)
+console.log(windSpeed)
+
+
+function calWindChill(tempIn, windSpeedIn){
+
+    var windChill = 35.74 + 0.6215*tempIn - (35.75*windSpeedIn**0.16) + 0.4275 * tempIn * windSpeedIn**0.16
+    return windChill
+}
+
+
+var windChillValue = ''
+if (tempIn <= 60 && windSpeedIn >= 3) {windChillValue = (calWindChill(tempIn, windSpeedIn)).toFixed(2)}
+else {windChillValue = "N/A"}
+console.log(windChillValue)
+
+
+
+document.querySelector('#windChill').textContent = windChillValue

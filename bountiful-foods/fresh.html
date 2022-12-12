@@ -190,6 +190,35 @@
             <input type="submit" value="Build Your Smoothie" class="submitBtn">
 
         </form> 
+        <section class="true-center-sm fruit-form">
+            <h2 id="form-head" class="bigger-h">Make a Drink!</h2>
+            <form id="mix-form">
+                <input type="date" name="date" hidden id="date">
+                <label for="fName">First Name<span class="req-f">*</span> <br>
+                    <input name="fName" type="text" class="input-box" id='fName' required>
+                </label>
+                <label for="email">Email<span class="req-f">*</span><br>
+                    <input name="email" type="email" id="email" class="input-box" required>
+                </label>
+                <label for="phone">Phone Number<span class="req-f">*</span><br>
+                    <input name="phone" type="tel" id="phone" class="input-box" required>
+                </label>
+                <div id="fruit-selector">
+                    <p>Select up to 3 fruits:</p>
+
+                </div>
+                <label for="add-instructions"> <p>Special requests</p> 
+                <textarea name="add-instructions" id="add-instructions" cols="30" rows="10" class="input-box"></textarea></label> <br>
+                <input type="button" value="Mix it Up!" class="btn-alt btn" id="mix-btn">
+            </form>
+            <img src="./images/placeholder.png" alt="smoothie" data-src="./images/form-smoothie.jpg" id="form-img">
+            <section id="form-output" class="true-center">
+                <h2 class="bigger-h">Output</h2>
+                <div id="output">
+                    <p>Please create a drink to see the nutrients it contains</p>
+                </div>
+            </section>
+        </section>
     </main>
     <footer>
         <div id="bottom-logo">
@@ -210,7 +239,7 @@
         </div>
     </footer>
     <script src="scripts/date.js"></script>
-    <script src="scripts/weather.js"></script>
+    <script src="scripts/form.js"></script>
     <script src="scripts/spotlight.js"></script>
 </body>
 </html>

@@ -560,3 +560,25 @@ div#spotlight3 {
 section#weather {
     background-color: #466d72;
 }
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid green;
+    margin: 5px auto;
+}
+
+.weather h3, p {
+    margin: 10px;
+    padding: 0px;
+    
+}
+
+#forecast {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: left;
+    border: 2px solid green;
+    margin: 5px auto;
+}

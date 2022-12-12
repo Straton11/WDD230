@@ -34,6 +34,9 @@
             <a href="https://linkedin.com" >
                 <img class="social" src="images/LinkedIn.png" alt="linkedin icon">
             </a>
+            <a href="https://instagram.com" >
+                <img class="social" src="images/instagram.png" alt="linkedin icon">
+            </a>
         </div>
         <button id="hamburgerBtn"><span>&#9776</span><span>X</span></button>
         <nav>
@@ -59,7 +62,7 @@
         <div class="hero-link">
             <a href="fresh.html">Start Now!</a>
         </div>
-        <section class="mainContent" id="weather">
+        <!-- <section class="mainContent" id="weather">
             <h3>Weather</h3>
             <img id="weatherIcon" src="" alt="">
             <h4 id="degree"><span id="temp"></span> &#8457;</h4>
@@ -86,7 +89,26 @@
                     <p id="lo3" class="lo"></p>
                 </div>
             </div>
-        </section>
+        </section> -->
+        <div class="mainWeather">
+            <div class="weather">
+                <h2>Weather</h2>
+                <div class="iconContainer">
+                  <img id="weatherIcon" src="images/symbols_weather_clear_sunny.jpg" alt="weather icon">
+                </div>
+                <h3><span id="temp"></span> &#x00b0; F</h3>
+                <h3 id="condition">Partly Cloudy</h3>
+                <p>Humidity: <span id="humidity"></span>%
+                    <br>
+                  Wind Speed: <span id="windSpeed"></span> mph 
+                    <br>
+                  Wind Chill: <span id="windChill"></span> &#x00b0; F</p>
+            </div>
+          
+                <div id="forecast">
+                    <h3>3 Day Weather Forecast</h3>
+                </div>
+            </div>
         <section class="mainContent" id="join">
             <p>Bountiful Foods is small business specializing in organic, locally grown foods. They are physically located in Carlsbad, California, however, they have many food trucks that cover the coastal area from Los Angeles to San Diego. The company sells fruits and produce directly from the farmers in the area, but also uses some national and international suppliers. The owner-operated company caters to walk in traffic at their storefront in Carlsbad and, of course, their food trucks. They deliver and manage those orders on the phone and via the website. The mission is to provide fresh and healthy food options, including organic, made to order, fruit drinks and fruit bags, to the local population and to tourists visiting the coastal areas. The theme should support healthy eating, organic bounty, and convenience.</p>
         </section>
@@ -100,6 +122,17 @@
             <h2>Bountiful Foods</h2>
             <p>Carlsbad, California</p>
         </div>
+        <div id="social">
+            <a href="https://facebook.com" >
+                <img class="social" src="images/facebook2.png" alt="facebook icon">
+            </a>
+            <a href="https://linkedin.com" >
+                <img class="social" src="images/LinkedIn.png" alt="linkedin icon">
+            </a>
+            <a href="https://instagram.com" >
+                <img class="social" src="images/instagram.png" alt="linkedin icon">
+            </a>
+        </div>
         <div id="info">
             <p>info@bountifulfoods.com<br>(408)552-9789</p>
             <a href="https://www.google.com/maps/place/3477+Pioneer+Dr,+Idaho+Falls,+ID+83402/@43.466296,-112.0830363,17z/data=!3m1!4b1!4m5!3m4!1s0x535459b07e08659d:0xdf743ea90941f088!8m2!3d43.4662921!4d-112.0808423"
@@ -112,6 +145,6 @@
     </footer>
     <script src="scripts/date.js"></script>
     <script src="scripts/weather.js"></script>
-    <script src="scripts/weather1.js"></script>
+    <script src="scripts/forecast.js"></script>
 </body>
 </html>
