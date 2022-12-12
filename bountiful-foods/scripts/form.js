@@ -174,7 +174,7 @@ function getDate() {
         mm = '0'+mm
     } 
   
-    today = yyyy + '/' + mm + '/' + dd;
+    today = mm + '/' + dd + '/' + yyyy;
     return today;
  }
 
