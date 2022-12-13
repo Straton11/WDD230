@@ -1,3 +1,44 @@
 @media (min-width: 45em) {
-
+    button#hamburgerBtn {
+        display: none;
+    }
+    nav{
+        grid-column: 3;
+        grid-row: 1;
+        width: auto;
+        border: none;
+    }
+    nav ul {
+        display: flex;
+        justify-content:center;
+        
+    }
+    nav ul li a {
+        padding: .5rem 1rem;
+        border: none;
+    }
+    nav ul li a:hover {
+        background-color: #931f1d;
+    }
+    section.drinks {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 50px;
+    }
+    section.true-center-sm.fruit-form {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 25px;
+    }
+    section.us {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    img.maps {
+        max-width: 50%;
+        margin: auto;
+    }
+    a {
+        max-width: 50%;
+    }
 }

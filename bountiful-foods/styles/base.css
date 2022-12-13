@@ -1,104 +1,3 @@
-main.thanks {
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-    align-items: center;
-}
-section#join.mainContent {
-    padding-top: 30px;
-}
-img.check {
-    max-width: 50px;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-section#submitted {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-}
-#grid, #list {
-    font-size: 20px;
-    padding: 15px;
-    color: white;
-    background: #466d72;
-    border-radius: 10px;
-    border: 1px outset #DEA402;
-    margin: 30px;
-}
-
-#grid:hover, #list:hover {
-    box-shadow: 0px 0px 5px 5px #466d72;
-}
-
-div.cards {
-    height:100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    padding: 5px;
-    background-color: white;
-    color: #466d72;
-    
-}
-
-div.cards section {
-    background-color: #DEA402;
-    padding: 5px;
-    margin: 5px;
-}
-
-.cards div h2,h2,h3,h4,h5,h6,p {
-    display: block;
-    text-align: center;
-    font-size: 15px;
-}
-
-.cards img {
-    display: block;
-    margin:0 auto;
-    padding-bottom: 10px;
-    max-width: 50%;
-}
-
-.list {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-}
-.list section {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 5px 5px;
-    text-align: left;
-    padding: 2px;
-    background-color: #DEA402;
-    color: #466d72;
-}
-.list section h2 {
-    font-size: 20px;
-}
-
-.list section h3,h4,h5,h6,p {
-    font-size: 15px;
-}
-
-#directory div.list section h3,h4,h5,h6,p {
-    font-size: 15px;
-}
-
-.list section img {
-    max-width: 150px;
-    border: 1px solid #466d72;
-    margin-top: 10px;
-}
-
-.list section h2,h3, h4 {
-    display: none;
-}
 body {
     max-width: 1280px;
     font-family: 'Roboto', cursive;
@@ -142,7 +41,7 @@ header div#top-logo img.logos#top{
     box-sizing: border-box;
 }
 header, footer{
-    background-color: green;
+    background-color: #8a9b68 ;
     color: white;
     box-shadow: 0 0 5px black;
 }
@@ -187,6 +86,10 @@ h1 {
 h2{
     font-family: 'Rock Salt', sans-serif;
     font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+
 }
 
 button {
@@ -199,7 +102,7 @@ button {
 }
 
 nav {
-    background-color: green;
+    background-color: #8a9b68 ;
     grid-column: 1/5;
     width: 100%;
 }
@@ -224,12 +127,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #DEA402;
+    background-color: #931f1d;
 }
-
-nav ul {
+button#hamburgerBtn {
     display: none;
 }
+/* nav ul {
+    display: none;
+} */
 
 nav ul.open {
     display: block;
@@ -258,7 +163,9 @@ main {
     font-size: 1em;
     align-content: center;
     margin-top: 10px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), #8a9b68);
 }
+
 .mainContent#hero{
     position: relative;
 }
@@ -294,17 +201,7 @@ p#data {
     font-size: 1.5vw;
     margin-right: 7px;
 }
-#weather-status{
-    grid-row: 3;
-    grid-column: 1/3;
-    text-align: right;
-    margin: 0 7px;
-    margin-bottom: 4px;
-}
-#weather-details{
-    grid-row: 4;
-    grid-column: 1/3;
-}
+
 .hero-img{
     width: 100%;
     height: auto;
@@ -316,37 +213,41 @@ p#data {
 
 }
 .hero-text h2{
-    color: black;
+    color: white;
     font-size: 1.5em;
     font-weight: bolder;
     justify-content: center;
     align-items: center;
-    background-color: #f9e45b;
+    background-color: #931f1d ;
     margin: auto;
 }
 .hero-link{
-    background:green;
+    background:#2c502a;
 	border: 1px solid rgba(255, 255, 255, 0.1);
 	padding: 1.5rem;
 	box-shadow: 0 0 10px rgb(0 0 0 / 20%);
 	opacity: 0.9;
     border-radius: 5px;
+    display: grid;
+    grid-auto-columns: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
 }
 .hero-link a{
     color: white;
-}
-main section:nth-child(4) {
-    /*Hide Join section on mobile viewport*/
-    display: none;
 }
 .mainContent#spotlight3{
     display: none;
 }
 
 .mainContent {
-    border-style: ridge;
+    border: 2px solid #2c502a;
+    margin: 5px auto;
     margin:7px;
     text-align: center;
+    padding: 10px;
+    background-color: white;
     
 }
 main p{
@@ -411,27 +312,7 @@ article img {
 h3 {
     text-align: center;
 }
-.lazy-load {
-    align-items: center;
-    justify-items: center;
-    margin: auto;
-    line-height: 0;
-}
-#part1 {
-    display: grid;
-    grid-template-rows: auto auto auto;
-}
-fieldset.basicInfo {
-    display: grid;
-    grid-template-columns: auto;
-}
-label.top {
-    column-span: all;
-    padding-left: 10px;
-}
-form {
-    width: 90%;
-}
+
 h1#heading {
     margin: auto;
     align-items: center;
@@ -446,126 +327,14 @@ section.top1 {
     display: flex;
     justify-content: center;
 }
-#grid, #list {
-    font-size: 20px;
-    padding: 15px;
-    color: white;
-    background: #466d72;
-    border-radius: 10px;
-    border: 1px outset #DEA402;
-    margin: 30px;
-}
 
-#grid:hover, #list:hover {
-    box-shadow: 0px 0px 5px 5px #466d72;
-}
-.lazy-load:hover {
-    box-shadow: 0px 0px 5px 5px #DEA402;
-}
-
-div.cards {
-    height:100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    padding: 5px;
-    background-color: white;
-    color: #466d72;
-    
-}
-
-div.cards section {
-    background-color: #DEA402;
-    padding: 5px;
-    margin: 5px;
-}
-
-.cards div h2,h2,h3,h4,h5,h6,p {
-    display: block;
-    text-align: center;
-    font-size: 15px;
-}
-
-.cards img {
-    display: block;
-    margin:0 auto;
-    padding-bottom: 10px;
-    max-width: 50%;
-}
-
-.list {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-}
-.list section {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 5px 5px;
-    text-align: left;
-    padding: 2px;
-    background-color: #DEA402;
-    color: #466d72;
-}
-.list section h2 {
-    font-size: 20px;
-}
-
-.list section h3,h4,h5,h6,p {
-    font-size: 15px;
-}
-
-#directory div.list section h3,h4,h5,h6,p {
-    font-size: 15px;
-}
-
-.list section img {
-    max-width: 150px;
-    border: 1px solid #466d72;
-    margin-top: 10px;
-}
-
-/* .list section h2,h3, h4 {
-    display: none;
-} */
-
-img#homeimg {
-    max-width: 150px;
-}
-img#map {
-    max-width: 400px;
-    align-items: center;
-    justify-content: center;
-}
-a.maps {
-    display: grid;
-    grid-template-rows: auto auto;
-    align-items: center;
-    justify-content: center;
-}
-section#heading {
-    align-items: center;
-    justify-content: center;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-div#spotlight {
-    background-color: #DEA402;
-}
-div#spotlight3 {
-    background-color: #DEA402;
-}
-section#weather {
-    background-color: #466d72;
-}
 .weather {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid green;
+    border: 2px solid #2c502a;
     margin: 5px auto;
+    background-color: white;
 }
 
 .weather h3, p {
@@ -579,6 +348,63 @@ section#weather {
     align-items: center;
     flex-direction: column;
     justify-content: left;
-    border: 2px solid green;
+    border: 2px solid #2c502a;
     margin: 5px auto;
+    padding: 10px;
+    background-color: white;
+}
+section#drink-count.true-center {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    border: 2px solid #2c502a;
+    margin: 5px auto;
+    padding: 10px;
+    background-color: white;
+}
+span#drink-total.bigger-h {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 50px;
+    margin-top: -25px;
+}
+div#output {
+    border: 1px solid #2c502a;
+    margin: 5px auto;
+    padding: 10px;
+    background-color: white;
+}
+label {
+    display: grid;
+    grid-template-rows: auto auto;
+    padding: 3px;
+}
+input#mix-btn {
+    background-color: white;
+}
+section.about {
+    background-color: white;
+    max-width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+img.maps {
+    max-width: 80%;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    margin: auto;
+}
+section.contact {
+    background-color: white;
+    max-width: 80%;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+
 }

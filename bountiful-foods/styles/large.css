@@ -42,7 +42,7 @@
             border: none;
         }
         nav ul li a:hover {
-            background-color: #DEA402;
+            background-color: #931f1d;
         }
         .part1 {
             width: 64rem;
@@ -52,6 +52,16 @@
         }
         .list h3,h4,h5,h6,p {
             font-size: 10px;
+        }
+        div.mainWeather {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 75px;
+        }
+        .weather {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 10px
         }
         
     }
