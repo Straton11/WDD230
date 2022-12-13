@@ -50,15 +50,4 @@ const x = document.getElementById('hamburgerBtn');
 x.onclick = toggleMenu;
 
 
-/*code for getting day of week written out*/
-let weekday = new Date().toLocaleString('en-us', {weekday:'long'});
-console.log(weekday);
 
-//code to toggle invite banner based on day of week being Tuesday or Wednesday
-window.addEventListener("load", () => {
-    if (weekday == "Monday" || weekday == "Tuesday") {
-        document.querySelector(".banner").style.display = "block";
-    } else {
-        document.querySelector(".banner").style.display = "none";
-    }
-});
